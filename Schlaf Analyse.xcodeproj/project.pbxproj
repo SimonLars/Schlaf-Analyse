@@ -1,0 +1,888 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9A3F07326FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F07226FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift */; };
+		F9A3F07526FBA9E60019F9D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F07426FBA9E60019F9D5 /* ContentView.swift */; };
+		F9A3F07726FBA9F20019F9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A3F07626FBA9F20019F9D5 /* Assets.xcassets */; };
+		F9A3F07A26FBA9F20019F9D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A3F07926FBA9F20019F9D5 /* Preview Assets.xcassets */; };
+		F9A3F08526FBA9F20019F9D5 /* Schlaf_AnalyseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F08426FBA9F20019F9D5 /* Schlaf_AnalyseTests.swift */; };
+		F9A3F09026FBA9F20019F9D5 /* Schlaf_AnalyseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F08F26FBA9F20019F9D5 /* Schlaf_AnalyseUITests.swift */; };
+		F9A3F09526FBA9F20019F9D5 /* Schlaf Analyse WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F9A3F09426FBA9F20019F9D5 /* Schlaf Analyse WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F9A3F09A26FBA9FD0019F9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A3F09926FBA9FD0019F9D5 /* Assets.xcassets */; };
+		F9A3F0A126FBA9FD0019F9D5 /* Schlaf Analyse WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F9A3F0A026FBA9FD0019F9D5 /* Schlaf Analyse WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F9A3F0A626FBA9FD0019F9D5 /* Schlaf_AnalyseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F0A526FBA9FD0019F9D5 /* Schlaf_AnalyseApp.swift */; };
+		F9A3F0A826FBA9FD0019F9D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F0A726FBA9FD0019F9D5 /* ContentView.swift */; };
+		F9A3F0AA26FBA9FD0019F9D5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F0A926FBA9FD0019F9D5 /* NotificationController.swift */; };
+		F9A3F0AC26FBA9FD0019F9D5 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F0AB26FBA9FD0019F9D5 /* NotificationView.swift */; };
+		F9A3F0AE26FBA9FD0019F9D5 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F0AD26FBA9FD0019F9D5 /* ComplicationController.swift */; };
+		F9A3F0B026FBAA080019F9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A3F0AF26FBAA080019F9D5 /* Assets.xcassets */; };
+		F9A3F0B326FBAA080019F9D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A3F0B226FBAA080019F9D5 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9A3F08126FBA9F20019F9D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9A3F06726FBA9E50019F9D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9A3F06E26FBA9E60019F9D5;
+			remoteInfo = "Schlaf Analyse";
+		};
+		F9A3F08C26FBA9F20019F9D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9A3F06726FBA9E50019F9D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9A3F06E26FBA9E60019F9D5;
+			remoteInfo = "Schlaf Analyse";
+		};
+		F9A3F09626FBA9F20019F9D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9A3F06726FBA9E50019F9D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9A3F09326FBA9F20019F9D5;
+			remoteInfo = "Schlaf Analyse WatchKit App";
+		};
+		F9A3F0A226FBA9FD0019F9D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9A3F06726FBA9E50019F9D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9A3F09F26FBA9FD0019F9D5;
+			remoteInfo = "Schlaf Analyse WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F9A3F0BB26FBAA080019F9D5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F9A3F0A126FBA9FD0019F9D5 /* Schlaf Analyse WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A3F0BF26FBAA080019F9D5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F9A3F09526FBA9F20019F9D5 /* Schlaf Analyse WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F9A3F06F26FBA9E60019F9D5 /* Schlaf Analyse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schlaf Analyse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A3F07226FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schlaf_AnalyseApp.swift; sourceTree = "<group>"; };
+		F9A3F07426FBA9E60019F9D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F9A3F07626FBA9F20019F9D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9A3F07926FBA9F20019F9D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9A3F07B26FBA9F20019F9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A3F08026FBA9F20019F9D5 /* Schlaf AnalyseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Schlaf AnalyseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A3F08426FBA9F20019F9D5 /* Schlaf_AnalyseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schlaf_AnalyseTests.swift; sourceTree = "<group>"; };
+		F9A3F08626FBA9F20019F9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A3F08B26FBA9F20019F9D5 /* Schlaf AnalyseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Schlaf AnalyseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A3F08F26FBA9F20019F9D5 /* Schlaf_AnalyseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schlaf_AnalyseUITests.swift; sourceTree = "<group>"; };
+		F9A3F09126FBA9F20019F9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A3F09426FBA9F20019F9D5 /* Schlaf Analyse WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schlaf Analyse WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A3F09926FBA9FD0019F9D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9A3F09B26FBA9FD0019F9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A3F0A026FBA9FD0019F9D5 /* Schlaf Analyse WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Schlaf Analyse WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A3F0A526FBA9FD0019F9D5 /* Schlaf_AnalyseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schlaf_AnalyseApp.swift; sourceTree = "<group>"; };
+		F9A3F0A726FBA9FD0019F9D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F9A3F0A926FBA9FD0019F9D5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F9A3F0AB26FBA9FD0019F9D5 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		F9A3F0AD26FBA9FD0019F9D5 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F9A3F0AF26FBAA080019F9D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9A3F0B226FBAA080019F9D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9A3F0B426FBAA080019F9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A3F0B526FBAA080019F9D5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9A3F06C26FBA9E60019F9D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A3F07D26FBA9F20019F9D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A3F08826FBA9F20019F9D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A3F09D26FBA9FD0019F9D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9A3F06626FBA9E50019F9D5 = {
+			isa = PBXGroup;
+			children = (
+				F9A3F07126FBA9E60019F9D5 /* Schlaf Analyse */,
+				F9A3F08326FBA9F20019F9D5 /* Schlaf AnalyseTests */,
+				F9A3F08E26FBA9F20019F9D5 /* Schlaf AnalyseUITests */,
+				F9A3F09826FBA9F20019F9D5 /* Schlaf Analyse WatchKit App */,
+				F9A3F0A426FBA9FD0019F9D5 /* Schlaf Analyse WatchKit Extension */,
+				F9A3F07026FBA9E60019F9D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9A3F07026FBA9E60019F9D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9A3F06F26FBA9E60019F9D5 /* Schlaf Analyse.app */,
+				F9A3F08026FBA9F20019F9D5 /* Schlaf AnalyseTests.xctest */,
+				F9A3F08B26FBA9F20019F9D5 /* Schlaf AnalyseUITests.xctest */,
+				F9A3F09426FBA9F20019F9D5 /* Schlaf Analyse WatchKit App.app */,
+				F9A3F0A026FBA9FD0019F9D5 /* Schlaf Analyse WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9A3F07126FBA9E60019F9D5 /* Schlaf Analyse */ = {
+			isa = PBXGroup;
+			children = (
+				F9A3F07226FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift */,
+				F9A3F07426FBA9E60019F9D5 /* ContentView.swift */,
+				F9A3F07626FBA9F20019F9D5 /* Assets.xcassets */,
+				F9A3F07B26FBA9F20019F9D5 /* Info.plist */,
+				F9A3F07826FBA9F20019F9D5 /* Preview Content */,
+			);
+			path = "Schlaf Analyse";
+			sourceTree = "<group>";
+		};
+		F9A3F07826FBA9F20019F9D5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F9A3F07926FBA9F20019F9D5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F9A3F08326FBA9F20019F9D5 /* Schlaf AnalyseTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9A3F08426FBA9F20019F9D5 /* Schlaf_AnalyseTests.swift */,
+				F9A3F08626FBA9F20019F9D5 /* Info.plist */,
+			);
+			path = "Schlaf AnalyseTests";
+			sourceTree = "<group>";
+		};
+		F9A3F08E26FBA9F20019F9D5 /* Schlaf AnalyseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9A3F08F26FBA9F20019F9D5 /* Schlaf_AnalyseUITests.swift */,
+				F9A3F09126FBA9F20019F9D5 /* Info.plist */,
+			);
+			path = "Schlaf AnalyseUITests";
+			sourceTree = "<group>";
+		};
+		F9A3F09826FBA9F20019F9D5 /* Schlaf Analyse WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F9A3F09926FBA9FD0019F9D5 /* Assets.xcassets */,
+				F9A3F09B26FBA9FD0019F9D5 /* Info.plist */,
+			);
+			path = "Schlaf Analyse WatchKit App";
+			sourceTree = "<group>";
+		};
+		F9A3F0A426FBA9FD0019F9D5 /* Schlaf Analyse WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F9A3F0A526FBA9FD0019F9D5 /* Schlaf_AnalyseApp.swift */,
+				F9A3F0A726FBA9FD0019F9D5 /* ContentView.swift */,
+				F9A3F0A926FBA9FD0019F9D5 /* NotificationController.swift */,
+				F9A3F0AB26FBA9FD0019F9D5 /* NotificationView.swift */,
+				F9A3F0AD26FBA9FD0019F9D5 /* ComplicationController.swift */,
+				F9A3F0AF26FBAA080019F9D5 /* Assets.xcassets */,
+				F9A3F0B426FBAA080019F9D5 /* Info.plist */,
+				F9A3F0B526FBAA080019F9D5 /* PushNotificationPayload.apns */,
+				F9A3F0B126FBAA080019F9D5 /* Preview Content */,
+			);
+			path = "Schlaf Analyse WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F9A3F0B126FBAA080019F9D5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F9A3F0B226FBAA080019F9D5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9A3F06E26FBA9E60019F9D5 /* Schlaf Analyse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A3F0C026FBAA080019F9D5 /* Build configuration list for PBXNativeTarget "Schlaf Analyse" */;
+			buildPhases = (
+				F9A3F06B26FBA9E60019F9D5 /* Sources */,
+				F9A3F06C26FBA9E60019F9D5 /* Frameworks */,
+				F9A3F06D26FBA9E60019F9D5 /* Resources */,
+				F9A3F0BF26FBAA080019F9D5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9A3F09726FBA9F20019F9D5 /* PBXTargetDependency */,
+			);
+			name = "Schlaf Analyse";
+			productName = "Schlaf Analyse";
+			productReference = F9A3F06F26FBA9E60019F9D5 /* Schlaf Analyse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9A3F07F26FBA9F20019F9D5 /* Schlaf AnalyseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A3F0C326FBAA080019F9D5 /* Build configuration list for PBXNativeTarget "Schlaf AnalyseTests" */;
+			buildPhases = (
+				F9A3F07C26FBA9F20019F9D5 /* Sources */,
+				F9A3F07D26FBA9F20019F9D5 /* Frameworks */,
+				F9A3F07E26FBA9F20019F9D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9A3F08226FBA9F20019F9D5 /* PBXTargetDependency */,
+			);
+			name = "Schlaf AnalyseTests";
+			productName = "Schlaf AnalyseTests";
+			productReference = F9A3F08026FBA9F20019F9D5 /* Schlaf AnalyseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9A3F08A26FBA9F20019F9D5 /* Schlaf AnalyseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A3F0C626FBAA080019F9D5 /* Build configuration list for PBXNativeTarget "Schlaf AnalyseUITests" */;
+			buildPhases = (
+				F9A3F08726FBA9F20019F9D5 /* Sources */,
+				F9A3F08826FBA9F20019F9D5 /* Frameworks */,
+				F9A3F08926FBA9F20019F9D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9A3F08D26FBA9F20019F9D5 /* PBXTargetDependency */,
+			);
+			name = "Schlaf AnalyseUITests";
+			productName = "Schlaf AnalyseUITests";
+			productReference = F9A3F08B26FBA9F20019F9D5 /* Schlaf AnalyseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F9A3F09326FBA9F20019F9D5 /* Schlaf Analyse WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A3F0BC26FBAA080019F9D5 /* Build configuration list for PBXNativeTarget "Schlaf Analyse WatchKit App" */;
+			buildPhases = (
+				F9A3F09226FBA9F20019F9D5 /* Resources */,
+				F9A3F0BB26FBAA080019F9D5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9A3F0A326FBA9FD0019F9D5 /* PBXTargetDependency */,
+			);
+			name = "Schlaf Analyse WatchKit App";
+			productName = "Schlaf Analyse WatchKit App";
+			productReference = F9A3F09426FBA9F20019F9D5 /* Schlaf Analyse WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F9A3F09F26FBA9FD0019F9D5 /* Schlaf Analyse WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A3F0B826FBAA080019F9D5 /* Build configuration list for PBXNativeTarget "Schlaf Analyse WatchKit Extension" */;
+			buildPhases = (
+				F9A3F09C26FBA9FD0019F9D5 /* Sources */,
+				F9A3F09D26FBA9FD0019F9D5 /* Frameworks */,
+				F9A3F09E26FBA9FD0019F9D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Schlaf Analyse WatchKit Extension";
+			productName = "Schlaf Analyse WatchKit Extension";
+			productReference = F9A3F0A026FBA9FD0019F9D5 /* Schlaf Analyse WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9A3F06726FBA9E50019F9D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F9A3F06E26FBA9E60019F9D5 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F9A3F07F26FBA9F20019F9D5 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F9A3F06E26FBA9E60019F9D5;
+					};
+					F9A3F08A26FBA9F20019F9D5 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F9A3F06E26FBA9E60019F9D5;
+					};
+					F9A3F09326FBA9F20019F9D5 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F9A3F09F26FBA9FD0019F9D5 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = F9A3F06A26FBA9E50019F9D5 /* Build configuration list for PBXProject "Schlaf Analyse" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9A3F06626FBA9E50019F9D5;
+			productRefGroup = F9A3F07026FBA9E60019F9D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9A3F06E26FBA9E60019F9D5 /* Schlaf Analyse */,
+				F9A3F07F26FBA9F20019F9D5 /* Schlaf AnalyseTests */,
+				F9A3F08A26FBA9F20019F9D5 /* Schlaf AnalyseUITests */,
+				F9A3F09326FBA9F20019F9D5 /* Schlaf Analyse WatchKit App */,
+				F9A3F09F26FBA9FD0019F9D5 /* Schlaf Analyse WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9A3F06D26FBA9E60019F9D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A3F07A26FBA9F20019F9D5 /* Preview Assets.xcassets in Resources */,
+				F9A3F07726FBA9F20019F9D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A3F07E26FBA9F20019F9D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A3F08926FBA9F20019F9D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A3F09226FBA9F20019F9D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A3F09A26FBA9FD0019F9D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A3F09E26FBA9FD0019F9D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A3F0B326FBAA080019F9D5 /* Preview Assets.xcassets in Resources */,
+				F9A3F0B026FBAA080019F9D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9A3F06B26FBA9E60019F9D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A3F07526FBA9E60019F9D5 /* ContentView.swift in Sources */,
+				F9A3F07326FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A3F07C26FBA9F20019F9D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A3F08526FBA9F20019F9D5 /* Schlaf_AnalyseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A3F08726FBA9F20019F9D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A3F09026FBA9F20019F9D5 /* Schlaf_AnalyseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A3F09C26FBA9FD0019F9D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A3F0AA26FBA9FD0019F9D5 /* NotificationController.swift in Sources */,
+				F9A3F0A826FBA9FD0019F9D5 /* ContentView.swift in Sources */,
+				F9A3F0AE26FBA9FD0019F9D5 /* ComplicationController.swift in Sources */,
+				F9A3F0A626FBA9FD0019F9D5 /* Schlaf_AnalyseApp.swift in Sources */,
+				F9A3F0AC26FBA9FD0019F9D5 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9A3F08226FBA9F20019F9D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9A3F06E26FBA9E60019F9D5 /* Schlaf Analyse */;
+			targetProxy = F9A3F08126FBA9F20019F9D5 /* PBXContainerItemProxy */;
+		};
+		F9A3F08D26FBA9F20019F9D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9A3F06E26FBA9E60019F9D5 /* Schlaf Analyse */;
+			targetProxy = F9A3F08C26FBA9F20019F9D5 /* PBXContainerItemProxy */;
+		};
+		F9A3F09726FBA9F20019F9D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9A3F09326FBA9F20019F9D5 /* Schlaf Analyse WatchKit App */;
+			targetProxy = F9A3F09626FBA9F20019F9D5 /* PBXContainerItemProxy */;
+		};
+		F9A3F0A326FBA9FD0019F9D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9A3F09F26FBA9FD0019F9D5 /* Schlaf Analyse WatchKit Extension */;
+			targetProxy = F9A3F0A226FBA9FD0019F9D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F9A3F0B626FBAA080019F9D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9A3F0B726FBAA080019F9D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F9A3F0B926FBAA080019F9D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Schlaf Analyse WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8V4K5WQX9A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Schlaf Analyse WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SimonLarsHesse.Schlaf-Analyse.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		F9A3F0BA26FBAA080019F9D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Schlaf Analyse WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8V4K5WQX9A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Schlaf Analyse WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SimonLarsHesse.Schlaf-Analyse.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		F9A3F0BD26FBAA080019F9D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V4K5WQX9A;
+				IBSC_MODULE = Schlaf_Analyse_WatchKit_Extension;
+				INFOPLIST_FILE = "Schlaf Analyse WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "SimonLarsHesse.Schlaf-Analyse.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		F9A3F0BE26FBAA080019F9D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V4K5WQX9A;
+				IBSC_MODULE = Schlaf_Analyse_WatchKit_Extension;
+				INFOPLIST_FILE = "Schlaf Analyse WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "SimonLarsHesse.Schlaf-Analyse.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		F9A3F0C126FBAA080019F9D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Schlaf Analyse/Preview Content\"";
+				DEVELOPMENT_TEAM = 8V4K5WQX9A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Schlaf Analyse/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SimonLarsHesse.Schlaf-Analyse";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9A3F0C226FBAA080019F9D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Schlaf Analyse/Preview Content\"";
+				DEVELOPMENT_TEAM = 8V4K5WQX9A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Schlaf Analyse/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SimonLarsHesse.Schlaf-Analyse";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9A3F0C426FBAA080019F9D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V4K5WQX9A;
+				INFOPLIST_FILE = "Schlaf AnalyseTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SimonLarsHesse.Schlaf-AnalyseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Schlaf Analyse.app/Schlaf Analyse";
+			};
+			name = Debug;
+		};
+		F9A3F0C526FBAA080019F9D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V4K5WQX9A;
+				INFOPLIST_FILE = "Schlaf AnalyseTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SimonLarsHesse.Schlaf-AnalyseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Schlaf Analyse.app/Schlaf Analyse";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9A3F0C726FBAA080019F9D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V4K5WQX9A;
+				INFOPLIST_FILE = "Schlaf AnalyseUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SimonLarsHesse.Schlaf-AnalyseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Schlaf Analyse";
+			};
+			name = Debug;
+		};
+		F9A3F0C826FBAA080019F9D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V4K5WQX9A;
+				INFOPLIST_FILE = "Schlaf AnalyseUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SimonLarsHesse.Schlaf-AnalyseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Schlaf Analyse";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9A3F06A26FBA9E50019F9D5 /* Build configuration list for PBXProject "Schlaf Analyse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A3F0B626FBAA080019F9D5 /* Debug */,
+				F9A3F0B726FBAA080019F9D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A3F0B826FBAA080019F9D5 /* Build configuration list for PBXNativeTarget "Schlaf Analyse WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A3F0B926FBAA080019F9D5 /* Debug */,
+				F9A3F0BA26FBAA080019F9D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A3F0BC26FBAA080019F9D5 /* Build configuration list for PBXNativeTarget "Schlaf Analyse WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A3F0BD26FBAA080019F9D5 /* Debug */,
+				F9A3F0BE26FBAA080019F9D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A3F0C026FBAA080019F9D5 /* Build configuration list for PBXNativeTarget "Schlaf Analyse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A3F0C126FBAA080019F9D5 /* Debug */,
+				F9A3F0C226FBAA080019F9D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A3F0C326FBAA080019F9D5 /* Build configuration list for PBXNativeTarget "Schlaf AnalyseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A3F0C426FBAA080019F9D5 /* Debug */,
+				F9A3F0C526FBAA080019F9D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A3F0C626FBAA080019F9D5 /* Build configuration list for PBXNativeTarget "Schlaf AnalyseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A3F0C726FBAA080019F9D5 /* Debug */,
+				F9A3F0C826FBAA080019F9D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9A3F06726FBA9E50019F9D5 /* Project object */;
+}

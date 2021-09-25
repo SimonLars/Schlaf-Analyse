@@ -6,12 +6,26 @@
 //
 
 import SwiftUI
+import HealthKit
 
 @main
 struct Schlaf_AnalyseApp: App {
+    
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
+            
+            if HKHealthStore.isHealthDataAvailable() {
+                
+                
+                HealthKitAvailableView()
+                    .environmentObject(SchlafAnalyseModell())
+                
+            }
+            else {
+                HealthKitNotAvailableView()
+            }
+             
         }
     }
 }

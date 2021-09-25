@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F97180D526FF197A00BAA4F0 /* Rechner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97180D426FF197A00BAA4F0 /* Rechner.swift */; };
 		F9A3F07326FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F07226FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift */; };
-		F9A3F07526FBA9E60019F9D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F07426FBA9E60019F9D5 /* ContentView.swift */; };
+		F9A3F07526FBA9E60019F9D5 /* HealthKitAvailableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F07426FBA9E60019F9D5 /* HealthKitAvailableView.swift */; };
 		F9A3F07726FBA9F20019F9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A3F07626FBA9F20019F9D5 /* Assets.xcassets */; };
 		F9A3F07A26FBA9F20019F9D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A3F07926FBA9F20019F9D5 /* Preview Assets.xcassets */; };
 		F9A3F08526FBA9F20019F9D5 /* Schlaf_AnalyseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F08426FBA9F20019F9D5 /* Schlaf_AnalyseTests.swift */; };
@@ -23,6 +24,10 @@
 		F9A3F0AE26FBA9FD0019F9D5 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F0AD26FBA9FD0019F9D5 /* ComplicationController.swift */; };
 		F9A3F0B026FBAA080019F9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A3F0AF26FBAA080019F9D5 /* Assets.xcassets */; };
 		F9A3F0B326FBAA080019F9D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A3F0B226FBAA080019F9D5 /* Preview Assets.xcassets */; };
+		F9A3F0CF26FBAB950019F9D5 /* SchlafAnalyseModell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F0CE26FBAB950019F9D5 /* SchlafAnalyseModell.swift */; };
+		F9A3F0D826FBABCF0019F9D5 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A3F0D726FBABCF0019F9D5 /* HealthKit.framework */; };
+		F9A3F0DF26FBAC3B0019F9D5 /* HealthKitNotAvailableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F0DE26FBAC3B0019F9D5 /* HealthKitNotAvailableView.swift */; };
+		F9D6716326FDF6F0008E9637 /* DatumHelfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D6716226FDF6F0008E9637 /* DatumHelfer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,9 +87,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F97180D426FF197A00BAA4F0 /* Rechner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rechner.swift; sourceTree = "<group>"; };
 		F9A3F06F26FBA9E60019F9D5 /* Schlaf Analyse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schlaf Analyse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A3F07226FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schlaf_AnalyseApp.swift; sourceTree = "<group>"; };
-		F9A3F07426FBA9E60019F9D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F9A3F07426FBA9E60019F9D5 /* HealthKitAvailableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitAvailableView.swift; sourceTree = "<group>"; };
 		F9A3F07626FBA9F20019F9D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9A3F07926FBA9F20019F9D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F9A3F07B26FBA9F20019F9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +113,11 @@
 		F9A3F0B226FBAA080019F9D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F9A3F0B426FBAA080019F9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9A3F0B526FBAA080019F9D5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F9A3F0CE26FBAB950019F9D5 /* SchlafAnalyseModell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchlafAnalyseModell.swift; sourceTree = "<group>"; };
+		F9A3F0D526FBABCF0019F9D5 /* Schlaf Analyse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Schlaf Analyse.entitlements"; sourceTree = "<group>"; };
+		F9A3F0D726FBABCF0019F9D5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		F9A3F0DE26FBAC3B0019F9D5 /* HealthKitNotAvailableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitNotAvailableView.swift; sourceTree = "<group>"; };
+		F9D6716226FDF6F0008E9637 /* DatumHelfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatumHelfer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A3F0D826FBABCF0019F9D5 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,11 +157,12 @@
 			isa = PBXGroup;
 			children = (
 				F9A3F07126FBA9E60019F9D5 /* Schlaf Analyse */,
-				F9A3F08326FBA9F20019F9D5 /* Schlaf AnalyseTests */,
-				F9A3F08E26FBA9F20019F9D5 /* Schlaf AnalyseUITests */,
 				F9A3F09826FBA9F20019F9D5 /* Schlaf Analyse WatchKit App */,
 				F9A3F0A426FBA9FD0019F9D5 /* Schlaf Analyse WatchKit Extension */,
+				F9A3F08326FBA9F20019F9D5 /* Schlaf AnalyseTests */,
+				F9A3F08E26FBA9F20019F9D5 /* Schlaf AnalyseUITests */,
 				F9A3F07026FBA9E60019F9D5 /* Products */,
+				F9A3F0D626FBABCF0019F9D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,8 +181,11 @@
 		F9A3F07126FBA9E60019F9D5 /* Schlaf Analyse */ = {
 			isa = PBXGroup;
 			children = (
+				F9A3F0D526FBABCF0019F9D5 /* Schlaf Analyse.entitlements */,
 				F9A3F07226FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift */,
-				F9A3F07426FBA9E60019F9D5 /* ContentView.swift */,
+				F9A3F0E526FBAC410019F9D5 /* Views */,
+				F9A3F0F026FBAD8C0019F9D5 /* Model */,
+				F9D6716126FDF6D8008E9637 /* Helper */,
 				F9A3F07626FBA9F20019F9D5 /* Assets.xcassets */,
 				F9A3F07B26FBA9F20019F9D5 /* Info.plist */,
 				F9A3F07826FBA9F20019F9D5 /* Preview Content */,
@@ -234,6 +250,40 @@
 				F9A3F0B226FBAA080019F9D5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F9A3F0D626FBABCF0019F9D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9A3F0D726FBABCF0019F9D5 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9A3F0E526FBAC410019F9D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9A3F07426FBA9E60019F9D5 /* HealthKitAvailableView.swift */,
+				F9A3F0DE26FBAC3B0019F9D5 /* HealthKitNotAvailableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F9A3F0F026FBAD8C0019F9D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9A3F0CE26FBAB950019F9D5 /* SchlafAnalyseModell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9D6716126FDF6D8008E9637 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F9D6716226FDF6F0008E9637 /* DatumHelfer.swift */,
+				F97180D426FF197A00BAA4F0 /* Rechner.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,10 +408,10 @@
 			};
 			buildConfigurationList = F9A3F06A26FBA9E50019F9D5 /* Build configuration list for PBXProject "Schlaf Analyse" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = de;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				de,
 				Base,
 			);
 			mainGroup = F9A3F06626FBA9E50019F9D5;
@@ -426,8 +476,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9A3F07526FBA9E60019F9D5 /* ContentView.swift in Sources */,
+				F9A3F0CF26FBAB950019F9D5 /* SchlafAnalyseModell.swift in Sources */,
+				F9A3F0DF26FBAC3B0019F9D5 /* HealthKitNotAvailableView.swift in Sources */,
+				F9A3F07526FBA9E60019F9D5 /* HealthKitAvailableView.swift in Sources */,
 				F9A3F07326FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift in Sources */,
+				F9D6716326FDF6F0008E9637 /* DatumHelfer.swift in Sources */,
+				F97180D526FF197A00BAA4F0 /* Rechner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,6 +745,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Schlaf Analyse/Schlaf Analyse.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Schlaf Analyse/Preview Content\"";
 				DEVELOPMENT_TEAM = 8V4K5WQX9A;
@@ -705,7 +760,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -714,6 +769,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Schlaf Analyse/Schlaf Analyse.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Schlaf Analyse/Preview Content\"";
 				DEVELOPMENT_TEAM = 8V4K5WQX9A;
@@ -728,7 +784,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

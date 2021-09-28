@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F92FC81C270371AC00FB648C /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FC81B270371AB00FB648C /* BarChart.swift */; };
+		F92FC81E2703723400FB648C /* BarChartWithHorizontalLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FC81D2703723400FB648C /* BarChartWithHorizontalLine.swift */; };
+		F92FC8202703729200FB648C /* BarChartWithDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FC81F2703729200FB648C /* BarChartWithDescription.swift */; };
 		F97180D526FF197A00BAA4F0 /* Rechner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97180D426FF197A00BAA4F0 /* Rechner.swift */; };
 		F9A3F07326FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F07226FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift */; };
 		F9A3F07526FBA9E60019F9D5 /* HealthKitAvailableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F07426FBA9E60019F9D5 /* HealthKitAvailableView.swift */; };
@@ -87,6 +90,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F92FC81B270371AB00FB648C /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		F92FC81D2703723400FB648C /* BarChartWithHorizontalLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartWithHorizontalLine.swift; sourceTree = "<group>"; };
+		F92FC81F2703729200FB648C /* BarChartWithDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartWithDescription.swift; sourceTree = "<group>"; };
 		F97180D426FF197A00BAA4F0 /* Rechner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rechner.swift; sourceTree = "<group>"; };
 		F9A3F06F26FBA9E60019F9D5 /* Schlaf Analyse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schlaf Analyse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A3F07226FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schlaf_AnalyseApp.swift; sourceTree = "<group>"; };
@@ -153,6 +159,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F92FC81A2703716100FB648C /* Balken Diagramme */ = {
+			isa = PBXGroup;
+			children = (
+				F92FC81B270371AB00FB648C /* BarChart.swift */,
+				F92FC81D2703723400FB648C /* BarChartWithHorizontalLine.swift */,
+				F92FC81F2703729200FB648C /* BarChartWithDescription.swift */,
+			);
+			path = "Balken Diagramme";
+			sourceTree = "<group>";
+		};
 		F9A3F06626FBA9E50019F9D5 = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +281,7 @@
 			children = (
 				F9A3F07426FBA9E60019F9D5 /* HealthKitAvailableView.swift */,
 				F9A3F0DE26FBAC3B0019F9D5 /* HealthKitNotAvailableView.swift */,
+				F92FC81A2703716100FB648C /* Balken Diagramme */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -476,7 +493,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92FC81E2703723400FB648C /* BarChartWithHorizontalLine.swift in Sources */,
 				F9A3F0CF26FBAB950019F9D5 /* SchlafAnalyseModell.swift in Sources */,
+				F92FC81C270371AC00FB648C /* BarChart.swift in Sources */,
+				F92FC8202703729200FB648C /* BarChartWithDescription.swift in Sources */,
 				F9A3F0DF26FBAC3B0019F9D5 /* HealthKitNotAvailableView.swift in Sources */,
 				F9A3F07526FBA9E60019F9D5 /* HealthKitAvailableView.swift in Sources */,
 				F9A3F07326FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift in Sources */,

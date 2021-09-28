@@ -17,7 +17,7 @@ struct Schlaf_AnalyseApp: App {
             
             if HKHealthStore.isHealthDataAvailable() {
                 
-                
+//                GettingStartedWithHealthKit()
                 HealthKitAvailableView()
                     .environmentObject(SchlafAnalyseModell())
                 

@@ -4,11 +4,12 @@ import SwiftUI
 
 struct BarChart: View {
     
-    var cornerRadius: Double = 0.5 // Between 0.0 and 1.0
-    var color: Color = .blue
-    var barWidth: Double = 0.7 // Between 0.2 and 1.0
+    let data: [Double]
     
-    var data: [Double] = [0.5, 0.0, 0.1, 0.9, 1.0, 0.25, 0.75]
+    let totalBarWidth: Double // Between 0.2 and 1.0
+    let cornerRadius: Double // Between 0.0 and 1.0
+    let barColor: Color
+    
     
     var body: some View {
         
@@ -22,7 +23,7 @@ struct BarChart: View {
                     let sceenHight = geometry.size.height
                     
                     Rectangle()
-                        .foregroundColor(color)
+                        .foregroundColor(barColor)
                         .cornerRadius(cornerRadius / 2 * calculatingWidth(screenWidth: screenWidth))
                         .frame(width: calculatingWidth(screenWidth: screenWidth), height: sceenHight * dataPoint)
                         .offset(x: returnOffset(dataIndex: dataIndex, screenWidth: screenWidth), y: 0)
@@ -32,7 +33,7 @@ struct BarChart: View {
     }
     
     func calculatingWidth(screenWidth: Double) -> CGFloat{
-        let spaceToDivide = screenWidth * barWidth
+        let spaceToDivide = screenWidth * totalBarWidth
         let widthOfOneBar = spaceToDivide / Double(data.count)
         return widthOfOneBar
     }
@@ -41,7 +42,7 @@ struct BarChart: View {
         let individualSpace = Double(dataIndex) / Double(data.count)
         let firstOffset = individualSpace * screenWidth
         
-        let sumOfSpaces = screenWidth * (1 - barWidth)
+        let sumOfSpaces = screenWidth * (1 - totalBarWidth)
         let singleSpace = sumOfSpaces / Double(data.count)
         let halfOfSingleSpace = singleSpace / 2
         let secondOffset = halfOfSingleSpace
@@ -54,6 +55,6 @@ struct BarChart: View {
 
 struct BarChart_Previews: PreviewProvider {
     static var previews: some View {
-        BarChart()
+        BarChart(data: [0.5, 0.0, 0.1, 0.9, 1.0, 0.25, 0.75], totalBarWidth: 0.7, cornerRadius: 0.5, barColor: .blue)
     }
 }

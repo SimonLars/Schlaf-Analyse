@@ -4,11 +4,17 @@ import SwiftUI
 
 struct BarChartWithHorizontalLine: View {
     
-    var lineHightInPercent: Double = 0.7 // Betrwenn 0.0 and 1.0
-    var cornerRadius: Double = 1.0 // Between 0.0 and 1.0
-    var lineThickness: Double = 10.0
-    var lineColor: Color = .black
-    var opacity: Double = 0.5 // Between 0.0 and 1.0
+    let data: [Double]
+    let lineHightInPercent: Double // Betrwenn 0.0 and 1.0
+    
+    let totalBarWidth: Double // Between > 0.0 and <= 1.0
+    let barChartCornerRadius: Double // Between 0.0 and 1.0
+    let barColor: Color
+    
+    let horizontalLineCornerRadius: Double // Between 0.0 and 1.0
+    let lineThickness: Double
+    let lineColor: Color
+    let lineOpacity: Double // Between 0.0 and 1.0
     
     var body: some View {
         
@@ -18,13 +24,13 @@ struct BarChartWithHorizontalLine: View {
             
             ZStack{
                 
-                BarChart()
+                BarChart(data: data, totalBarWidth: totalBarWidth, cornerRadius: barChartCornerRadius, barColor: barColor)
                 
                 Rectangle()
                     .foregroundColor(lineColor)
                     .frame(width: screenWidth, height: lineThickness)
                     .cornerRadius(returnCornerRadius())
-                    .opacity(opacity)
+                    .opacity(lineOpacity)
                     .offset(x: 0, y: screenHight / 2) // Offset to the bottom
                     .offset(x: 0, y: offsetForLineHight(screenHight: screenHight))
             }
@@ -39,12 +45,12 @@ struct BarChartWithHorizontalLine: View {
     }
     
     func returnCornerRadius() -> CGFloat {
-        return cornerRadius / 2.0 * lineThickness
+        return horizontalLineCornerRadius / 2.0 * lineThickness
     }
 }
 
 struct BarChartWithHorizontalLine_Previews: PreviewProvider {
     static var previews: some View {
-        BarChartWithHorizontalLine()
+        BarChartWithHorizontalLine(data: [0.5, 0.0, 0.1, 0.9, 1.0, 0.25, 0.75], lineHightInPercent: 0.7, totalBarWidth: 0.7, barChartCornerRadius: 0.5, barColor: .blue, horizontalLineCornerRadius: 1.0, lineThickness: 10, lineColor: .black, lineOpacity: 0.5)
     }
 }

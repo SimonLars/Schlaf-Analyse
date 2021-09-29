@@ -16,6 +16,8 @@ class SchlafAnalyseModell: ObservableObject {
     
     let healthKitStore = HKHealthStore()
     
+    
+    
     public func erlaubnisFuerSchlafanalyseAnfragen() {
         
         let dataToRequest = Set([HKObjectType.categoryType(forIdentifier: .sleepAnalysis)!])
@@ -46,28 +48,44 @@ class SchlafAnalyseModell: ObservableObject {
             if let result = result {
                 
                 let categorySampleResult = result.compactMap({ $0 as? HKCategorySample}) // Converts [HKSample] to [HKCategorySample]
+                var totalSleep: Double = 0.0
+                var totalBedTime: Double = 0.0
                 
                 for eintrag in categorySampleResult {
                     
                     guard let schlafWert = HKCategoryValueSleepAnalysis(rawValue: eintrag.value) else { return }
                     
+                    let timeInterval = eintrag.endDate.timeIntervalSince(eintrag.startDate)
                     var schlafzustand = ""
                     
                     switch schlafWert {
                     case .asleep:
                         schlafzustand = "schlafend"
+                        totalSleep += timeInterval
                     case .awake,
                          .inBed:
                         schlafzustand = "wach"
+                        totalBedTime += timeInterval
                     default:
                         schlafzustand = ""
                     }
                     
-                    DispatchQueue.main.async {
-                        self.retrievedHealthData += "\n"
-                        self.retrievedHealthData += "Schlafwert: \(schlafzustand) (\(schlafWert.rawValue)) ||| Startzeit: \(DatumHelfer.datumFormatieren(datum: eintrag.startDate)) ||| Endzeit: \(DatumHelfer.datumFormatieren(datum: eintrag.endDate)) ||| Quelle: \(eintrag.sourceRevision.source.name)"
-                        self.retrievedHealthData += "\n"
-                    }
+//                    DispatchQueue.main.async {
+//                        self.retrievedHealthData += "\n"
+//                        self.retrievedHealthData += "Schlafwert: \(schlafzustand) (\(schlafWert.rawValue)) ||| Startzeit: \(DatumHelfer.datumFormatieren(datum: eintrag.startDate)) ||| Endzeit: \(DatumHelfer.datumFormatieren(datum: eintrag.endDate)) ||| Quelle: \(eintrag.sourceRevision.source.name)"
+//                        self.retrievedHealthData += "\n"
+//                    }
+                }
+                DispatchQueue.main.async {
+                    
+                    self.retrievedHealthData += "\n"
+                    self.retrievedHealthData += "total sleep: \(totalSleep / 60 / 60)"
+                    self.retrievedHealthData += "total bed time: \(totalBedTime / 60 / 60)"
+                    self.retrievedHealthData += "Effizient: \(totalSleep / totalBedTime * 100) %"
+                    self.retrievedHealthData += "\n"
+                    
+//                    print("total sleep: \(totalSleep / 60 / 60)")
+//                    print("total bed time: \(totalBedTime / 60 / 60)")
                 }
             }
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F90438CB27038288005D43F8 /* SchlafChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90438CA27038287005D43F8 /* SchlafChart.swift */; };
 		F92FC81C270371AC00FB648C /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FC81B270371AB00FB648C /* BarChart.swift */; };
 		F92FC81E2703723400FB648C /* BarChartWithHorizontalLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FC81D2703723400FB648C /* BarChartWithHorizontalLine.swift */; };
 		F92FC8202703729200FB648C /* BarChartWithDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FC81F2703729200FB648C /* BarChartWithDescription.swift */; };
@@ -90,6 +91,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F90438CA27038287005D43F8 /* SchlafChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchlafChart.swift; sourceTree = "<group>"; };
 		F92FC81B270371AB00FB648C /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
 		F92FC81D2703723400FB648C /* BarChartWithHorizontalLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartWithHorizontalLine.swift; sourceTree = "<group>"; };
 		F92FC81F2703729200FB648C /* BarChartWithDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartWithDescription.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 			children = (
 				F9A3F07426FBA9E60019F9D5 /* HealthKitAvailableView.swift */,
 				F9A3F0DE26FBAC3B0019F9D5 /* HealthKitNotAvailableView.swift */,
+				F90438CA27038287005D43F8 /* SchlafChart.swift */,
 				F92FC81A2703716100FB648C /* Balken Diagramme */,
 			);
 			path = Views;
@@ -494,6 +497,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F92FC81E2703723400FB648C /* BarChartWithHorizontalLine.swift in Sources */,
+				F90438CB27038288005D43F8 /* SchlafChart.swift in Sources */,
 				F9A3F0CF26FBAB950019F9D5 /* SchlafAnalyseModell.swift in Sources */,
 				F92FC81C270371AC00FB648C /* BarChart.swift in Sources */,
 				F92FC8202703729200FB648C /* BarChartWithDescription.swift in Sources */,

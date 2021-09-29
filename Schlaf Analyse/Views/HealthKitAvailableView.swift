@@ -26,10 +26,19 @@ struct HealthKitAvailableView: View {
             Text(datenModell.userMessage)
 
             Button("Print Sleep Data"){
-                datenModell.retrieveSleepData(von: DatumHelfer.getDatumMittags(jahr: 2021, monat: 09, tag: 28) ?? Date(), bis: Date())
+                datenModell.storeSleepData(from: DatumHelfer.getDatumMittags(jahr: 2021, monat: 09, tag: 10)!, to: Date())
             }
+            
+            if datenModell.sleepData.count != 0 {
+                
+                SchlafChart(data: Normalize.normalize(data: Normalize.getSleepData(data: datenModell.sleepData)), dataNames: ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"], lineHightInPercent: Normalize.normalize(value: 8, to: Normalize.getSleepData(data: datenModell.sleepData).max()!), barChartCornerRadius: 0.5, barColor: .blue, totalBarWidth: 0.7)
+            }
+            
+            Text("Normalized data: \(Normalize.normalize(data: Normalize.getSleepData(data: datenModell.sleepData)).description)")
 
-            Text("retrived Data: \(datenModell.retrievedHealthData)")
+//            Text("Retrieved Helth Data: \(datenModell.sleepData.description) end")
+            
+//            Text("retrived Data: \(datenModell.retrievedHealthData)")
             
 //            Button("Ask for hear rate reading access"){
 //                datenModell.erlaubnisFuerHerzfrequenzAnfragen()

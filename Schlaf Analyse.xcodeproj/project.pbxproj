@@ -12,6 +12,7 @@
 		F92FC81E2703723400FB648C /* BarChartWithHorizontalLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FC81D2703723400FB648C /* BarChartWithHorizontalLine.swift */; };
 		F92FC8202703729200FB648C /* BarChartWithDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FC81F2703729200FB648C /* BarChartWithDescription.swift */; };
 		F97180D526FF197A00BAA4F0 /* Rechner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97180D426FF197A00BAA4F0 /* Rechner.swift */; };
+		F971E1E927045F5400688912 /* Normalize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971E1E827045F5400688912 /* Normalize.swift */; };
 		F9A3F07326FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F07226FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift */; };
 		F9A3F07526FBA9E60019F9D5 /* HealthKitAvailableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A3F07426FBA9E60019F9D5 /* HealthKitAvailableView.swift */; };
 		F9A3F07726FBA9F20019F9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A3F07626FBA9F20019F9D5 /* Assets.xcassets */; };
@@ -96,6 +97,7 @@
 		F92FC81D2703723400FB648C /* BarChartWithHorizontalLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartWithHorizontalLine.swift; sourceTree = "<group>"; };
 		F92FC81F2703729200FB648C /* BarChartWithDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartWithDescription.swift; sourceTree = "<group>"; };
 		F97180D426FF197A00BAA4F0 /* Rechner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rechner.swift; sourceTree = "<group>"; };
+		F971E1E827045F5400688912 /* Normalize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Normalize.swift; sourceTree = "<group>"; };
 		F9A3F06F26FBA9E60019F9D5 /* Schlaf Analyse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schlaf Analyse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A3F07226FBA9E60019F9D5 /* Schlaf_AnalyseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schlaf_AnalyseApp.swift; sourceTree = "<group>"; };
 		F9A3F07426FBA9E60019F9D5 /* HealthKitAvailableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitAvailableView.swift; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 		F9D6716126FDF6D8008E9637 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				F971E1E827045F5400688912 /* Normalize.swift */,
 				F9D6716226FDF6F0008E9637 /* DatumHelfer.swift */,
 				F97180D426FF197A00BAA4F0 /* Rechner.swift */,
 			);
@@ -496,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F971E1E927045F5400688912 /* Normalize.swift in Sources */,
 				F92FC81E2703723400FB648C /* BarChartWithHorizontalLine.swift in Sources */,
 				F90438CB27038288005D43F8 /* SchlafChart.swift in Sources */,
 				F9A3F0CF26FBAB950019F9D5 /* SchlafAnalyseModell.swift in Sources */,

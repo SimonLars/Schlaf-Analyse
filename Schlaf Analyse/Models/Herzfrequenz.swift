@@ -13,7 +13,8 @@ class Herzfrequenz: ObservableObject {
     @Published var herzfrequenzen: [HKQuantitySample]? {
         didSet{
             if herzfrequenzen?.count != 0 && herzfrequenzen != nil {
-                durchschnittlicheHerzfrequenz = Int(Rechner.durchschnittlicheHerzfrequenz(herzfrequenzen: herzfrequenzen!))
+                durchschnittlicheHerzfrequenz = HerzfrequenzRechner.durchschnittlicheHerzfrequenzNachZeit(herzfrequenzen: herzfrequenzen!)
+//                Int(HerzfrequenzRechner.durchschnittlicheHerzfrequenzNachWerten(herzfrequenzen: herzfrequenzen!))
             }
         }
     }
@@ -33,7 +34,7 @@ class Herzfrequenz: ObservableObject {
         let herzfrequenz = Set([herzfrequenzTyp])
         healthStore.requestAuthorization(toShare: nil, read: herzfrequenz) { erfolg, fehler in
             if erfolg {
-                self.datenLadenLetzte(tage: 7)
+                self.datenLadenLetzte(tage: 1)
             }
         }
     }
@@ -55,7 +56,6 @@ class Herzfrequenz: ObservableObject {
                 let hkQuantitySample = daten.compactMap({ $0 as? HKQuantitySample }) // Von [HKSample] zu [HKQuantitySample]
                 DispatchQueue.main.async {
                     self.herzfrequenzen = hkQuantitySample
-                    print("Herzfrequenz daten laden - Durchschnitt: \(self.durchschnittlicheHerzfrequenz)")
                 }
             }
         }

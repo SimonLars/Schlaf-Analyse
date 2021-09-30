@@ -22,26 +22,22 @@ struct HealthKitAvailableView: View {
                 
             }
             if herzfrequenz.durchschnittlicheHerzfrequenz != nil {
-                DurchschnittlicheHerzfrequenzView(durchschnittlicheHerzfrequenz: herzfrequenz.durchschnittlicheHerzfrequenz!)
+                HerzfrequenzView(durchschnittlicheHerzfrequenz: herzfrequenz.durchschnittlicheHerzfrequenz!)
+                    .onAppear {
+                        HerzfrequenzRechner.durchschnittlicheHerzfrequenzNachZeit(herzfrequenzen: herzfrequenz.herzfrequenzen!) 
+                    }
             }
             if (schlaf.datenSchlafend == nil || schlaf.datenSchlafend!.count == 0 ) && herzfrequenz.durchschnittlicheHerzfrequenz == nil {
                 Text("Loading")
             }
         
-            
         }
-//        .onAppear {
-//            print("on appear ausgeführt")
-//            viewModel.schlaf.leseZugriffFragen()
-//            viewModel.herzfrequenz.leseZugriffFragen()
-//            print("on appear fertig")
-//        }
     }
 }
 
-struct HealthKitAvailableView_Previews: PreviewProvider {
-    static var previews: some View {
-        HealthKitAvailableView()
-            .environmentObject(ViewModel())
-    }
-}
+//struct HealthKitAvailableView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HealthKitAvailableView()
+//            .environmentObject(ViewModel())
+//    }
+//}

@@ -20,7 +20,7 @@ struct Normalize {
         return normalizedData
     }
     
-    public static func normalize(value: Double, to maximumValue: Double) -> Double {
+    public static func normalize(value: Double, toMaximumValue maximumValue: Double) -> Double {
         return value / maximumValue
     }
     

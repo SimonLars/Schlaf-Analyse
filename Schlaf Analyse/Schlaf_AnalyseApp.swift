@@ -11,16 +11,18 @@ import HealthKit
 @main
 struct Schlaf_AnalyseApp: App {
     
+    @State var healthStore = HKHealthStore()
+    
     var body: some Scene {
         
         WindowGroup {
             
             if HKHealthStore.isHealthDataAvailable() {
                 
-//                GettingStartedWithHealthKit()
                 HealthKitAvailableView()
-                    .environmentObject(SchlafAnalyseModell())
-                
+                    .environmentObject(Schlaf(healthStore: healthStore))
+                    .environmentObject(Herzfrequenz(healthStore: healthStore))
+                    
             }
             else {
                 HealthKitNotAvailableView()

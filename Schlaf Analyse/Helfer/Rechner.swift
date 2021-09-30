@@ -12,7 +12,12 @@ struct Rechner {
     
     private static let heartRateUnit: HKUnit = HKUnit.count().unitDivided(by: HKUnit.minute())
     
-    public static func durchschnittlicheHerzfrequenz(herzfrequenzen: [HKQuantitySample]) -> Double {
+    public static func sekundenInStunden(sekunden: Double) -> Double {
+        let stunden = sekunden / 60 / 60
+        return stunden
+    }
+    
+    public static func durchschnittlicheHerzfrequenz(herzfrequenzen: [HKQuantitySample]) -> Int {
         
         var summe: Double = 0
         
@@ -23,7 +28,7 @@ struct Rechner {
             }
         }
         
-        let durchschnittlicheHerzfrequenz = summe / Double(herzfrequenzen.count)
+        let durchschnittlicheHerzfrequenz = Int(summe / Double(herzfrequenzen.count))
         return durchschnittlicheHerzfrequenz
         
     }
@@ -47,7 +52,7 @@ struct Rechner {
         guard herzfrequenzen.count != 0 else { return nil }
         
         // Berechnung des Durchschnittes
-        let durchschnittlicheHerzfrequenz: Double = durchschnittlicheHerzfrequenz(herzfrequenzen: herzfrequenzen)
+        let durchschnittlicheHerzfrequenz: Double = Double(durchschnittlicheHerzfrequenz(herzfrequenzen: herzfrequenzen))
         
         // Berechnung der Summe der Abweichungen
         var summeDerAbweichungen: Double = 0.0

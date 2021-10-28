@@ -13,12 +13,15 @@ class Herzfrequenz: ObservableObject {
     @Published var herzfrequenzen: [HKQuantitySample]? {
         didSet{
             if herzfrequenzen?.count != 0 && herzfrequenzen != nil {
-                durchschnittlicheHerzfrequenz = HerzfrequenzRechner.durchschnittlicheHerzfrequenzNachZeit(herzfrequenzen: herzfrequenzen!)
-//                Int(HerzfrequenzRechner.durchschnittlicheHerzfrequenzNachWerten(herzfrequenzen: herzfrequenzen!))
+                durchschnittlicheHerzfrequenz = HerzfrequenzRechner.durchschnittlicheHerzfrequenz(herzfrequenzen: herzfrequenzen!)
+                niedrigsteHerzfrequenz = HerzfrequenzRechner.niedrigsteHerzfrequenz(herzfrequenzen: herzfrequenzen!)
+                hoechsteHerzfrequenz = HerzfrequenzRechner.hoechsteHerzfrequenz(herzfrequenzen: herzfrequenzen!)
             }
         }
     }
     @Published var durchschnittlicheHerzfrequenz: Int?
+    @Published var niedrigsteHerzfrequenz: Int?
+    @Published var hoechsteHerzfrequenz: Int?
     let healthStore: HKHealthStore
     
     init(healthStore: HKHealthStore) {

@@ -24,7 +24,7 @@ struct HealthKitAvailableView: View {
             if herzfrequenz.durchschnittlicheHerzfrequenz != nil {
                 HerzfrequenzView(durchschnittlicheHerzfrequenz: herzfrequenz.durchschnittlicheHerzfrequenz!)
                     .onAppear {
-                        HerzfrequenzRechner.durchschnittlicheHerzfrequenzNachZeit(herzfrequenzen: herzfrequenz.herzfrequenzen!) 
+                        HerzfrequenzRechner.durchschnittlicheHerzfrequenz(herzfrequenzen: herzfrequenz.herzfrequenzen!)
                     }
             }
             if (schlaf.datenSchlafend == nil || schlaf.datenSchlafend!.count == 0 ) && herzfrequenz.durchschnittlicheHerzfrequenz == nil {

@@ -4,31 +4,14 @@ import HealthKit
 
 struct HerzfrequenzRechner {
     
-    private static let heartRateUnit: HKUnit = HKUnit.count().unitDivided(by: HKUnit.minute())
+    public static let heartRateUnit: HKUnit = HKUnit.count().unitDivided(by: HKUnit.minute())
     
     public static func sekundenInStunden(sekunden: Double) -> Double {
         let stunden = sekunden / 60 / 60
         return stunden
     }
     
-    public static func durchschnittlicheHerzfrequenzNachWerten(herzfrequenzen: [HKQuantitySample]) -> Int {
-        
-        var summe: Double = 0
-        
-        for element in herzfrequenzen {
-            if element.quantityType == HKObjectType.quantityType(forIdentifier: .heartRate){
-                
-                print("Value: \(element.quantity) - Herzfrequenz: \(element.startDate)")
-                summe += element.quantity.doubleValue(for: heartRateUnit)
-            }
-        }
-        
-        let durchschnittlicheHerzfrequenz = Int(summe / Double(herzfrequenzen.count))
-        return durchschnittlicheHerzfrequenz
-        
-    }
-    
-    public static func durchschnittlicheHerzfrequenzNachZeit(herzfrequenzen: [HKQuantitySample]) -> Int {
+    public static func durchschnittlicheHerzfrequenz(herzfrequenzen: [HKQuantitySample]) -> Int {
         let sortierteHerzfrequenzen = herzfrequenzen.sorted(by: { $0.startDate < $1.startDate })
         
         let startDatum = sortierteHerzfrequenzen.first!.startDate
@@ -46,18 +29,15 @@ struct HerzfrequenzRechner {
         return gerundeteDurchschnittlicheHerzfrequenz
     }
     
-    public static func niedrigsteHerzfrequenz(herzfrequenzen: [HKQuantitySample]) -> Double {
-        
-        guard herzfrequenzen.count != 0 else { return -1.0 }
-        
-        var niedrigsteHerzfrequenz = herzfrequenzen[0]
-        
-        for herzfrequenz in herzfrequenzen {
-            if herzfrequenz.quantity.doubleValue(for: heartRateUnit) < niedrigsteHerzfrequenz.quantity.doubleValue(for: heartRateUnit) {
-                niedrigsteHerzfrequenz = herzfrequenz
-            }
-        }
-        return niedrigsteHerzfrequenz.quantity.doubleValue(for: heartRateUnit)
+    public static func niedrigsteHerzfrequenz(herzfrequenzen: [HKQuantitySample]) -> Int? {
+        guard herzfrequenzen.count != 0 else { return nil }
+        let niedrigsteHerzfrequenz = herzfrequenzen.min(by: { $0.quantity.doubleValue(for: heartRateUnit) < $1.quantity.doubleValue(for: heartRateUnit) })
+        return Int(round(niedrigsteHerzfrequenz!.quantity.doubleValue(for: heartRateUnit)))
+    }
+    public static func hoechsteHerzfrequenz(herzfrequenzen: [HKQuantitySample]) -> Int? {
+        guard herzfrequenzen.count != 0 else { return nil }
+        let hoechsteHerzfrequenz = herzfrequenzen.max(by: { $0.quantity.doubleValue(for: heartRateUnit) > $1.quantity.doubleValue(for: heartRateUnit) })
+        return Int(round(hoechsteHerzfrequenz!.quantity.doubleValue(for: heartRateUnit)))
     }
     
     public static func durchschnittlicheAbweichungHerzfrequenz(herzfrequenzen: [HKQuantitySample]) -> Double? { // Standardabweichung ist die durchschnittliche Abweichung
@@ -65,7 +45,7 @@ struct HerzfrequenzRechner {
         guard herzfrequenzen.count != 0 else { return nil }
         
         // Berechnung des Durchschnittes
-        let durchschnittlicheHerzfrequenz: Double = Double(durchschnittlicheHerzfrequenzNachWerten(herzfrequenzen: herzfrequenzen))
+        let durchschnittlicheHerzfrequenz: Double = Double(durchschnittlicheHerzfrequenz(herzfrequenzen: herzfrequenzen))
         
         // Berechnung der Summe der Abweichungen
         var summeDerAbweichungen: Double = 0.0
